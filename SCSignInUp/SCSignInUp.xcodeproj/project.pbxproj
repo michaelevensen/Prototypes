@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E4BA3D418EC6328008239F5 /* Interstate-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E4BA3D218EC6328008239F5 /* Interstate-Light.ttf */; };
+		9E4BA3D518EC6328008239F5 /* Interstate-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E4BA3D318EC6328008239F5 /* Interstate-Regular.ttf */; };
+		9E4BA3DA18EC64AB008239F5 /* SCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4BA3D718EC64AB008239F5 /* SCButton.m */; };
+		9E4BA3DB18EC64AB008239F5 /* SCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4BA3D918EC64AB008239F5 /* SCLabel.m */; };
+		9E4BA3DF18EC670F008239F5 /* SCInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4BA3DE18EC670F008239F5 /* SCInputViewController.m */; };
+		9E9E2E3618EC617000ADC0C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9E2E3518EC617000ADC0C7 /* Foundation.framework */; };
+		9E9E2E3818EC617000ADC0C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9E2E3718EC617000ADC0C7 /* CoreGraphics.framework */; };
+		9E9E2E3A18EC617000ADC0C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9E2E3918EC617000ADC0C7 /* UIKit.framework */; };
+		9E9E2E4018EC617000ADC0C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E9E2E3E18EC617000ADC0C7 /* InfoPlist.strings */; };
+		9E9E2E4218EC617000ADC0C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E2E4118EC617000ADC0C7 /* main.m */; };
+		9E9E2E4618EC617000ADC0C7 /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E2E4518EC617000ADC0C7 /* SCAppDelegate.m */; };
+		9E9E2E4918EC617000ADC0C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9E2E4718EC617000ADC0C7 /* Main.storyboard */; };
+		9E9E2E4C18EC617000ADC0C7 /* SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E2E4B18EC617000ADC0C7 /* SCViewController.m */; };
+		9E9E2E4E18EC617000ADC0C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E9E2E4D18EC617000ADC0C7 /* Images.xcassets */; };
+		9E9E2E5518EC617000ADC0C7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9E2E5418EC617000ADC0C7 /* XCTest.framework */; };
+		9E9E2E5618EC617000ADC0C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9E2E3518EC617000ADC0C7 /* Foundation.framework */; };
+		9E9E2E5718EC617000ADC0C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9E2E3918EC617000ADC0C7 /* UIKit.framework */; };
+		9E9E2E5F18EC617000ADC0C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E9E2E5D18EC617000ADC0C7 /* InfoPlist.strings */; };
+		9E9E2E6118EC617000ADC0C7 /* SCSignInUpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E2E6018EC617000ADC0C7 /* SCSignInUpTests.m */; };
+		9E9F642E18ED868900CEDCB3 /* SCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F642D18ED868900CEDCB3 /* SCTextField.m */; };
+		9E9F643118ED894600CEDCB3 /* SCTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F643018ED894600CEDCB3 /* SCTextView.m */; };
+		9E9F643718ED95B200CEDCB3 /* SCInputField.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F643618ED95B200CEDCB3 /* SCInputField.m */; };
+		9E9F644018ED981C00CEDCB3 /* SCInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F643E18ED981C00CEDCB3 /* SCInput.m */; };
+		9E9F644118ED981C00CEDCB3 /* SCInput.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E9F643F18ED981C00CEDCB3 /* SCInput.xib */; };
+		9E9F644718F0204500CEDCB3 /* SCUsernameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F644618F0204500CEDCB3 /* SCUsernameViewController.m */; };
+		9E9F648E18F56B4800CEDCB3 /* SCScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F648D18F56B4800CEDCB3 /* SCScrollView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E9E2E5818EC617000ADC0C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E9E2E2A18EC617000ADC0C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E9E2E3118EC617000ADC0C7;
+			remoteInfo = SCSignInUp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9E4BA3D218EC6328008239F5 /* Interstate-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Interstate-Light.ttf"; sourceTree = "<group>"; };
+		9E4BA3D318EC6328008239F5 /* Interstate-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Interstate-Regular.ttf"; sourceTree = "<group>"; };
+		9E4BA3D618EC64AB008239F5 /* SCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCButton.h; sourceTree = "<group>"; };
+		9E4BA3D718EC64AB008239F5 /* SCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCButton.m; sourceTree = "<group>"; };
+		9E4BA3D818EC64AB008239F5 /* SCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLabel.h; sourceTree = "<group>"; };
+		9E4BA3D918EC64AB008239F5 /* SCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLabel.m; sourceTree = "<group>"; };
+		9E4BA3DD18EC670F008239F5 /* SCInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCInputViewController.h; sourceTree = "<group>"; };
+		9E4BA3DE18EC670F008239F5 /* SCInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCInputViewController.m; sourceTree = "<group>"; };
+		9E9E2E3218EC617000ADC0C7 /* SCSignInUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCSignInUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E9E2E3518EC617000ADC0C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9E9E2E3718EC617000ADC0C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9E9E2E3918EC617000ADC0C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9E9E2E3D18EC617000ADC0C7 /* SCSignInUp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SCSignInUp-Info.plist"; sourceTree = "<group>"; };
+		9E9E2E3F18EC617000ADC0C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9E9E2E4118EC617000ADC0C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E9E2E4318EC617000ADC0C7 /* SCSignInUp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCSignInUp-Prefix.pch"; sourceTree = "<group>"; };
+		9E9E2E4418EC617000ADC0C7 /* SCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
+		9E9E2E4518EC617000ADC0C7 /* SCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
+		9E9E2E4818EC617000ADC0C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E9E2E4A18EC617000ADC0C7 /* SCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCViewController.h; sourceTree = "<group>"; };
+		9E9E2E4B18EC617000ADC0C7 /* SCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCViewController.m; sourceTree = "<group>"; };
+		9E9E2E4D18EC617000ADC0C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9E9E2E5318EC617000ADC0C7 /* SCSignInUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCSignInUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E9E2E5418EC617000ADC0C7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9E9E2E5C18EC617000ADC0C7 /* SCSignInUpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SCSignInUpTests-Info.plist"; sourceTree = "<group>"; };
+		9E9E2E5E18EC617000ADC0C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9E9E2E6018EC617000ADC0C7 /* SCSignInUpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSignInUpTests.m; sourceTree = "<group>"; };
+		9E9F642C18ED868900CEDCB3 /* SCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTextField.h; sourceTree = "<group>"; };
+		9E9F642D18ED868900CEDCB3 /* SCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTextField.m; sourceTree = "<group>"; };
+		9E9F642F18ED894600CEDCB3 /* SCTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTextView.h; sourceTree = "<group>"; };
+		9E9F643018ED894600CEDCB3 /* SCTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTextView.m; sourceTree = "<group>"; };
+		9E9F643518ED95B200CEDCB3 /* SCInputField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCInputField.h; sourceTree = "<group>"; };
+		9E9F643618ED95B200CEDCB3 /* SCInputField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCInputField.m; sourceTree = "<group>"; };
+		9E9F643D18ED981C00CEDCB3 /* SCInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCInput.h; sourceTree = "<group>"; };
+		9E9F643E18ED981C00CEDCB3 /* SCInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCInput.m; sourceTree = "<group>"; };
+		9E9F643F18ED981C00CEDCB3 /* SCInput.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCInput.xib; sourceTree = "<group>"; };
+		9E9F644518F0204500CEDCB3 /* SCUsernameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUsernameViewController.h; sourceTree = "<group>"; };
+		9E9F644618F0204500CEDCB3 /* SCUsernameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUsernameViewController.m; sourceTree = "<group>"; };
+		9E9F648C18F56B4800CEDCB3 /* SCScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCScrollView.h; sourceTree = "<group>"; };
+		9E9F648D18F56B4800CEDCB3 /* SCScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCScrollView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E9E2E2F18EC617000ADC0C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9E2E3818EC617000ADC0C7 /* CoreGraphics.framework in Frameworks */,
+				9E9E2E3A18EC617000ADC0C7 /* UIKit.framework in Frameworks */,
+				9E9E2E3618EC617000ADC0C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E9E2E5018EC617000ADC0C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9E2E5518EC617000ADC0C7 /* XCTest.framework in Frameworks */,
+				9E9E2E5718EC617000ADC0C7 /* UIKit.framework in Frameworks */,
+				9E9E2E5618EC617000ADC0C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E4BA3DC18EC64BD008239F5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9E9F642C18ED868900CEDCB3 /* SCTextField.h */,
+				9E9F642D18ED868900CEDCB3 /* SCTextField.m */,
+				9E4BA3D618EC64AB008239F5 /* SCButton.h */,
+				9E4BA3D718EC64AB008239F5 /* SCButton.m */,
+				9E4BA3D818EC64AB008239F5 /* SCLabel.h */,
+				9E4BA3D918EC64AB008239F5 /* SCLabel.m */,
+				9E4BA3D218EC6328008239F5 /* Interstate-Light.ttf */,
+				9E4BA3D318EC6328008239F5 /* Interstate-Regular.ttf */,
+				9E9F642F18ED894600CEDCB3 /* SCTextView.h */,
+				9E9F643018ED894600CEDCB3 /* SCTextView.m */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		9E9E2E2918EC617000ADC0C7 = {
+			isa = PBXGroup;
+			children = (
+				9E9E2E3B18EC617000ADC0C7 /* SCSignInUp */,
+				9E9E2E5A18EC617000ADC0C7 /* SCSignInUpTests */,
+				9E9E2E3418EC617000ADC0C7 /* Frameworks */,
+				9E9E2E3318EC617000ADC0C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E9E2E3318EC617000ADC0C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E9E2E3218EC617000ADC0C7 /* SCSignInUp.app */,
+				9E9E2E5318EC617000ADC0C7 /* SCSignInUpTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E9E2E3418EC617000ADC0C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E9E2E3518EC617000ADC0C7 /* Foundation.framework */,
+				9E9E2E3718EC617000ADC0C7 /* CoreGraphics.framework */,
+				9E9E2E3918EC617000ADC0C7 /* UIKit.framework */,
+				9E9E2E5418EC617000ADC0C7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E9E2E3B18EC617000ADC0C7 /* SCSignInUp */ = {
+			isa = PBXGroup;
+			children = (
+				9E4BA3DC18EC64BD008239F5 /* Fonts */,
+				9E9E2E4418EC617000ADC0C7 /* SCAppDelegate.h */,
+				9E9E2E4518EC617000ADC0C7 /* SCAppDelegate.m */,
+				9E9E2E4718EC617000ADC0C7 /* Main.storyboard */,
+				9E9E2E4A18EC617000ADC0C7 /* SCViewController.h */,
+				9E9E2E4B18EC617000ADC0C7 /* SCViewController.m */,
+				9E9E2E4D18EC617000ADC0C7 /* Images.xcassets */,
+				9E9E2E3C18EC617000ADC0C7 /* Supporting Files */,
+				9E4BA3DD18EC670F008239F5 /* SCInputViewController.h */,
+				9E4BA3DE18EC670F008239F5 /* SCInputViewController.m */,
+				9E9F644518F0204500CEDCB3 /* SCUsernameViewController.h */,
+				9E9F644618F0204500CEDCB3 /* SCUsernameViewController.m */,
+				9E9F643D18ED981C00CEDCB3 /* SCInput.h */,
+				9E9F643E18ED981C00CEDCB3 /* SCInput.m */,
+				9E9F643F18ED981C00CEDCB3 /* SCInput.xib */,
+				9E9F643518ED95B200CEDCB3 /* SCInputField.h */,
+				9E9F643618ED95B200CEDCB3 /* SCInputField.m */,
+				9E9F648C18F56B4800CEDCB3 /* SCScrollView.h */,
+				9E9F648D18F56B4800CEDCB3 /* SCScrollView.m */,
+			);
+			path = SCSignInUp;
+			sourceTree = "<group>";
+		};
+		9E9E2E3C18EC617000ADC0C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E9E2E3D18EC617000ADC0C7 /* SCSignInUp-Info.plist */,
+				9E9E2E3E18EC617000ADC0C7 /* InfoPlist.strings */,
+				9E9E2E4118EC617000ADC0C7 /* main.m */,
+				9E9E2E4318EC617000ADC0C7 /* SCSignInUp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E9E2E5A18EC617000ADC0C7 /* SCSignInUpTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E9E2E6018EC617000ADC0C7 /* SCSignInUpTests.m */,
+				9E9E2E5B18EC617000ADC0C7 /* Supporting Files */,
+			);
+			path = SCSignInUpTests;
+			sourceTree = "<group>";
+		};
+		9E9E2E5B18EC617000ADC0C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E9E2E5C18EC617000ADC0C7 /* SCSignInUpTests-Info.plist */,
+				9E9E2E5D18EC617000ADC0C7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E9E2E3118EC617000ADC0C7 /* SCSignInUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E9E2E6418EC617000ADC0C7 /* Build configuration list for PBXNativeTarget "SCSignInUp" */;
+			buildPhases = (
+				9E9E2E2E18EC617000ADC0C7 /* Sources */,
+				9E9E2E2F18EC617000ADC0C7 /* Frameworks */,
+				9E9E2E3018EC617000ADC0C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCSignInUp;
+			productName = SCSignInUp;
+			productReference = 9E9E2E3218EC617000ADC0C7 /* SCSignInUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9E9E2E5218EC617000ADC0C7 /* SCSignInUpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E9E2E6718EC617000ADC0C7 /* Build configuration list for PBXNativeTarget "SCSignInUpTests" */;
+			buildPhases = (
+				9E9E2E4F18EC617000ADC0C7 /* Sources */,
+				9E9E2E5018EC617000ADC0C7 /* Frameworks */,
+				9E9E2E5118EC617000ADC0C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E9E2E5918EC617000ADC0C7 /* PBXTargetDependency */,
+			);
+			name = SCSignInUpTests;
+			productName = SCSignInUpTests;
+			productReference = 9E9E2E5318EC617000ADC0C7 /* SCSignInUpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E9E2E2A18EC617000ADC0C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = SoundCloud;
+				TargetAttributes = {
+					9E9E2E5218EC617000ADC0C7 = {
+						TestTargetID = 9E9E2E3118EC617000ADC0C7;
+					};
+				};
+			};
+			buildConfigurationList = 9E9E2E2D18EC617000ADC0C7 /* Build configuration list for PBXProject "SCSignInUp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E9E2E2918EC617000ADC0C7;
+			productRefGroup = 9E9E2E3318EC617000ADC0C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E9E2E3118EC617000ADC0C7 /* SCSignInUp */,
+				9E9E2E5218EC617000ADC0C7 /* SCSignInUpTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E9E2E3018EC617000ADC0C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E4BA3D418EC6328008239F5 /* Interstate-Light.ttf in Resources */,
+				9E4BA3D518EC6328008239F5 /* Interstate-Regular.ttf in Resources */,
+				9E9F644118ED981C00CEDCB3 /* SCInput.xib in Resources */,
+				9E9E2E4E18EC617000ADC0C7 /* Images.xcassets in Resources */,
+				9E9E2E4018EC617000ADC0C7 /* InfoPlist.strings in Resources */,
+				9E9E2E4918EC617000ADC0C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E9E2E5118EC617000ADC0C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9E2E5F18EC617000ADC0C7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E9E2E2E18EC617000ADC0C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9F643718ED95B200CEDCB3 /* SCInputField.m in Sources */,
+				9E9E2E4618EC617000ADC0C7 /* SCAppDelegate.m in Sources */,
+				9E9E2E4C18EC617000ADC0C7 /* SCViewController.m in Sources */,
+				9E9E2E4218EC617000ADC0C7 /* main.m in Sources */,
+				9E9F642E18ED868900CEDCB3 /* SCTextField.m in Sources */,
+				9E9F644718F0204500CEDCB3 /* SCUsernameViewController.m in Sources */,
+				9E9F648E18F56B4800CEDCB3 /* SCScrollView.m in Sources */,
+				9E4BA3DF18EC670F008239F5 /* SCInputViewController.m in Sources */,
+				9E9F644018ED981C00CEDCB3 /* SCInput.m in Sources */,
+				9E9F643118ED894600CEDCB3 /* SCTextView.m in Sources */,
+				9E4BA3DB18EC64AB008239F5 /* SCLabel.m in Sources */,
+				9E4BA3DA18EC64AB008239F5 /* SCButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E9E2E4F18EC617000ADC0C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9E2E6118EC617000ADC0C7 /* SCSignInUpTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E9E2E5918EC617000ADC0C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E9E2E3118EC617000ADC0C7 /* SCSignInUp */;
+			targetProxy = 9E9E2E5818EC617000ADC0C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9E9E2E3E18EC617000ADC0C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E9E2E3F18EC617000ADC0C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9E9E2E4718EC617000ADC0C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E9E2E4818EC617000ADC0C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E9E2E5D18EC617000ADC0C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E9E2E5E18EC617000ADC0C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E9E2E6218EC617000ADC0C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9E9E2E6318EC617000ADC0C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E9E2E6518EC617000ADC0C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCSignInUp/SCSignInUp-Prefix.pch";
+				INFOPLIST_FILE = "SCSignInUp/SCSignInUp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9E9E2E6618EC617000ADC0C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCSignInUp/SCSignInUp-Prefix.pch";
+				INFOPLIST_FILE = "SCSignInUp/SCSignInUp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9E9E2E6818EC617000ADC0C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SCSignInUp.app/SCSignInUp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCSignInUp/SCSignInUp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SCSignInUpTests/SCSignInUpTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9E9E2E6918EC617000ADC0C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SCSignInUp.app/SCSignInUp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCSignInUp/SCSignInUp-Prefix.pch";
+				INFOPLIST_FILE = "SCSignInUpTests/SCSignInUpTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E9E2E2D18EC617000ADC0C7 /* Build configuration list for PBXProject "SCSignInUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E9E2E6218EC617000ADC0C7 /* Debug */,
+				9E9E2E6318EC617000ADC0C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E9E2E6418EC617000ADC0C7 /* Build configuration list for PBXNativeTarget "SCSignInUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E9E2E6518EC617000ADC0C7 /* Debug */,
+				9E9E2E6618EC617000ADC0C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E9E2E6718EC617000ADC0C7 /* Build configuration list for PBXNativeTarget "SCSignInUpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E9E2E6818EC617000ADC0C7 /* Debug */,
+				9E9E2E6918EC617000ADC0C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E9E2E2A18EC617000ADC0C7 /* Project object */;
+}

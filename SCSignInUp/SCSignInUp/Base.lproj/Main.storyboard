@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Qx7-8u-FCO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="P1s-Nb-ge9">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Qx7-8u-FCO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ioz-r0-954">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="cY8-6V-hcA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T3K-rh-UHX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="115"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="SCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Footer" translatesAutoresizingMaskIntoConstraints="NO" id="dzD-Wv-XOd">
+                                <rect key="frame" x="0.0" y="516" width="320" height="52"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xHy-64-6vz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06A-cf-2Ye" customClass="SCButton">
+                                        <rect key="frame" x="24" y="376" width="272" height="64"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <inset key="titleEdgeInsets" minX="41" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="23" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Sign in" image="signin" backgroundImage="button">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="1fP-sA-CdI" kind="modal" identifier="openSign" id="fm6-v6-pXb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Rn-oM-e28" customClass="SCButton">
+                                        <rect key="frame" x="24" y="299" width="272" height="64"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <inset key="titleEdgeInsets" minX="29" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="17" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Create account" image="create_account" backgroundImage="button">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="1fP-sA-CdI" kind="modal" identifier="openCreate" id="Af9-iK-BTt"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Sign in to SoundCloud" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlp-fC-dfD" customClass="SCLabel">
+                                        <rect key="frame" x="80" y="141" width="174" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="243" translatesAutoresizingMaskIntoConstraints="NO" id="x5T-AJ-Tfd" customClass="SCLabel">
+                                        <rect key="frame" x="39" y="158" width="243" height="70"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Save your favorite tracks and playlists to hear again and share">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hlp-fC-dfD" firstAttribute="leading" secondItem="xHy-64-6vz" secondAttribute="leading" constant="80" id="7lP-kC-6Zu"/>
+                                    <constraint firstItem="3Rn-oM-e28" firstAttribute="top" secondItem="x5T-AJ-Tfd" secondAttribute="bottom" constant="71" id="Aaf-oJ-Qbf"/>
+                                    <constraint firstAttribute="trailing" secondItem="x5T-AJ-Tfd" secondAttribute="trailing" constant="38" id="CH9-rp-iN3"/>
+                                    <constraint firstItem="hlp-fC-dfD" firstAttribute="top" secondItem="xHy-64-6vz" secondAttribute="top" constant="141" id="Id9-NF-GML"/>
+                                    <constraint firstItem="3Rn-oM-e28" firstAttribute="leading" secondItem="xHy-64-6vz" secondAttribute="leading" constant="24" id="Idc-QF-t31"/>
+                                    <constraint firstAttribute="trailing" secondItem="hlp-fC-dfD" secondAttribute="trailing" constant="66" id="N9W-mO-UN0"/>
+                                    <constraint firstItem="x5T-AJ-Tfd" firstAttribute="top" secondItem="xHy-64-6vz" secondAttribute="top" constant="158" id="OEn-wS-Bdo"/>
+                                    <constraint firstItem="x5T-AJ-Tfd" firstAttribute="leading" secondItem="xHy-64-6vz" secondAttribute="leading" constant="39" id="Oyi-bm-COj"/>
+                                    <constraint firstItem="06A-cf-2Ye" firstAttribute="top" secondItem="3Rn-oM-e28" secondAttribute="bottom" constant="13" id="b8I-Yk-Mec"/>
+                                    <constraint firstItem="06A-cf-2Ye" firstAttribute="leading" secondItem="xHy-64-6vz" secondAttribute="leading" constant="24" id="iDe-Co-gFd"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Rn-oM-e28" secondAttribute="trailing" constant="24" id="o1a-7j-snr"/>
+                                    <constraint firstAttribute="trailing" secondItem="06A-cf-2Ye" secondAttribute="trailing" constant="24" id="sON-sR-YOU"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ug0-TE-ny8">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="vmf-5g-jyR">
+                            <rect key="frame" x="96" y="5.5" width="128" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="yuo-kw-qRR">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="33"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="933" y="115"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sXP-9i-8KA">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="1fP-sA-CdI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f1r-Yj-QKN">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZfO-Bu-iS6" kind="relationship" relationship="rootViewController" id="WbL-ci-DL9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KCb-bh-h8p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368" y="115"/>
+        </scene>
+        <!--Create account-->
+        <scene sceneID="qke-Ix-nh7">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ZfO-Bu-iS6" customClass="SCInputViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uP7-Ta-ICH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mpg-Q1-gF9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gwg-MK-dad">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bd8-Pk-Hjo" customClass="SCScrollView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wfz-7m-kOR">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fev-fz-HNu" userLabel="Facebook Sign Up">
+                                                <rect key="frame" x="0.0" y="90" width="320" height="74"/>
+                                                <subviews>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign up with Facebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3m0-J2-E5n" customClass="SCLabel">
+                                                        <rect key="frame" x="69" y="27" width="231" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facebook_signup" translatesAutoresizingMaskIntoConstraints="NO" id="ORk-bw-2VD">
+                                                        <rect key="frame" x="20" y="22" width="31" height="31"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light_stroke" translatesAutoresizingMaskIntoConstraints="NO" id="8Gv-Nn-Ivq">
+                                                        <rect key="frame" x="0.0" y="73" width="320" height="1"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dark_stroke" translatesAutoresizingMaskIntoConstraints="NO" id="Ono-di-oSj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xzz-pg-GT9" userLabel="Google Sign Up">
+                                                <rect key="frame" x="0.0" y="164" width="320" height="74"/>
+                                                <subviews>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign up with Google" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMP-Na-BOF" customClass="SCLabel">
+                                                        <rect key="frame" x="69" y="27" width="231" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="google_signup" translatesAutoresizingMaskIntoConstraints="NO" id="fNc-yf-hnm">
+                                                        <rect key="frame" x="20" y="22" width="31" height="31"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dark_stroke" translatesAutoresizingMaskIntoConstraints="NO" id="xGL-Bc-f49">
+                                                        <rect key="frame" x="0.0" y="74" width="320" height="1"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view tag="10" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fpc-6l-Vgu" userLabel="Mail Address Input" customClass="SCInputField">
+                                                <rect key="frame" x="0.0" y="265" width="320" height="74"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dark_stroke" translatesAutoresizingMaskIntoConstraints="NO" id="Ozb-20-tGr" userLabel="Dark Top Stroke">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light_stroke" translatesAutoresizingMaskIntoConstraints="NO" id="iJU-jL-uJh" userLabel="Light Middle Stroke">
+                                                        <rect key="frame" x="0.0" y="73" width="320" height="1"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view tag="20" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z1E-Zc-CYH" userLabel="Password Input" customClass="SCInputField">
+                                                <rect key="frame" x="0.0" y="339" width="320" height="74"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dark_stroke" translatesAutoresizingMaskIntoConstraints="NO" id="TMM-aE-XGg" userLabel="Dark Bottom Stroke">
+                                                        <rect key="frame" x="0.0" y="74" width="320" height="1"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </view>
+                                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9f7-QA-7Hi" customClass="SCButton">
+                                                <rect key="frame" x="58" y="441" width="205" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <state key="normal" title="Forgot your password?">
+                                                    <color key="titleColor" red="0.33725490196078434" green="0.33725490196078434" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onForgotPassword:" destination="ZfO-Bu-iS6" eventType="touchDown" id="VQR-GG-mnZ"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="269" translatesAutoresizingMaskIntoConstraints="NO" id="Yq5-E9-umT" userLabel="Label - By signing up you are agreeing to our Cookie Policy, Terms of Service and Privacy Policy" customClass="SCLabel">
+                                                <rect key="frame" x="26" y="433" width="269" height="59"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="By signing up you are agreeing to our ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="11" name="Helvetica"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Cookie Policy">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.33725490200000002" green="0.33725490200000002" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="11" name="Helvetica"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="11" name="Helvetica"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Terms of Service">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.33725490200000002" green="0.33725490200000002" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="11" name="Helvetica"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" and ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="11" name="Helvetica"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Privacy Policy">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.33725490200000002" green="0.33725490200000002" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="11" name="Helvetica"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="11" name="Helvetica"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="269" translatesAutoresizingMaskIntoConstraints="NO" id="sa6-OQ-Rya" userLabel="Label - By signing up you are agreeing to our Cookie Policy, Terms of Service and Privacy Policy" customClass="SCLabel">
+                                                <rect key="frame" x="25" y="433" width="269" height="59"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="By signing in you are agree to the ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="11" name="Helvetica"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Terms of Service">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.33725490200000002" green="0.33725490200000002" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="11" name="Helvetica"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" and ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="11" name="Helvetica"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Privacy Policy">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.33725490200000002" green="0.33725490200000002" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="11" name="Helvetica"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" of SoundCloud">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="11" name="Helvetica"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create account" id="MYy-Wj-ye8">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="EvV-7L-BMP">
+                            <color key="tintColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onCancel:" destination="ZfO-Bu-iS6" id="m93-RW-6g7"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="khL-ys-7PD">
+                            <color key="tintColor" red="1" green="0.33333333333333331" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onDone:" destination="ZfO-Bu-iS6" id="dAr-b2-E4k"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="forgotPassword" destination="9f7-QA-7Hi" id="FYL-Uc-JyG"/>
+                        <outlet property="labelFacebook" destination="3m0-J2-E5n" id="N0t-dZ-rgH"/>
+                        <outlet property="labelGoogle" destination="HMP-Na-BOF" id="NWc-pO-D7R"/>
+                        <outlet property="mailAddressInput" destination="Fpc-6l-Vgu" id="y6U-3y-Ycr"/>
+                        <outlet property="passwordInput" destination="z1E-Zc-CYH" id="bCI-L7-opI"/>
+                        <outlet property="scrollView" destination="Bd8-Pk-Hjo" id="zBh-Qh-5Cn"/>
+                        <outlet property="signinText" destination="sa6-OQ-Rya" id="NdD-jZ-YXn"/>
+                        <outlet property="tosText" destination="Yq5-E9-umT" id="Nv1-gv-uxa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c6z-rS-SoD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813" y="115"/>
+        </scene>
+        <!--Choose Username-->
+        <scene sceneID="7dN-ro-O8M">
+            <objects>
+                <viewController storyboardIdentifier="chooseUsername" automaticallyAdjustsScrollViewInsets="NO" id="79S-CE-T5i" userLabel="Choose Username" customClass="SCUsernameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K8I-fx-PNb"/>
+                        <viewControllerLayoutGuide type="bottom" id="lZf-Lc-T6D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EhJ-v3-gmR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4W-XD-3sk" customClass="SCScrollView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="268" translatesAutoresizingMaskIntoConstraints="NO" id="7Me-Xa-ozb" customClass="SCLabel">
+                                        <rect key="frame" x="20" y="87" width="268" height="68"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Choose a username">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view tag="30" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9IN-Ea-3Sm" userLabel="Username Input" customClass="SCInputField">
+                                        <rect key="frame" x="0.0" y="178" width="320" height="74"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dark_stroke" translatesAutoresizingMaskIntoConstraints="NO" id="dM1-r2-eS9" userLabel="Dark Top Stroke">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dark_stroke" translatesAutoresizingMaskIntoConstraints="NO" id="j07-zY-roC" userLabel="Dark Bottom Stroke">
+                                                <rect key="frame" x="0.0" y="74" width="320" height="1"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Choose username" id="kh1-2H-GtF">
+                        <barButtonItem key="leftBarButtonItem" title="Skip" id="fr2-Kt-U5A">
+                            <color key="tintColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onCancel:" destination="79S-CE-T5i" id="GU4-2H-Ma7"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="HdJ-Ug-Yaq">
+                            <color key="tintColor" red="1" green="0.33333333329999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onDone:" destination="79S-CE-T5i" id="59o-VX-QHs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="scrollView" destination="M4W-XD-3sk" id="bp5-vw-xts"/>
+                        <outlet property="usernameInput" destination="9IN-Ea-3Sm" id="bw9-aH-yVD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="raB-PM-gdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2221" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Footer" width="320" height="52"/>
+        <image name="button" width="272" height="64"/>
+        <image name="create_account" width="38" height="36"/>
+        <image name="dark_stroke" width="320" height="1"/>
+        <image name="facebook_signup" width="31" height="31"/>
+        <image name="google_signup" width="31" height="31"/>
+        <image name="light_stroke" width="320" height="1"/>
+        <image name="logo" width="46" height="21"/>
+        <image name="signin" width="28" height="26"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="fm6-v6-pXb"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="1" green="0.33333333333333331" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+</document>

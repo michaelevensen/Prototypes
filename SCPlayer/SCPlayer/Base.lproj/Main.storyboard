@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Player View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="SCPlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CEK-Xl-PJB"/>
+                        <viewControllerLayoutGuide type="bottom" id="8v7-0w-8TS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Artwork" translatesAutoresizingMaskIntoConstraints="NO" id="QMZ-AK-eLh" userLabel="Background">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blur" translatesAutoresizingMaskIntoConstraints="NO" id="ydS-h8-6E8" userLabel="Blur">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jlD-IS-lSs">
+                                <rect key="frame" x="17" y="50" width="162" height="26"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wxh-wm-Qe2">
+                                <rect key="frame" x="17" y="24" width="133" height="23"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How To Dress Well" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FX-uY-yIU" customClass="SCLabel">
+                                <rect key="frame" x="23" y="25" width="238" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Repeat Pleasure" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyX-b3-P1M" customClass="SCLabel">
+                                <rect key="frame" x="22" y="52" width="278" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L7J-yP-8Cc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="5"/>
+                                <color key="backgroundColor" red="1" green="0.33333333333333331" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Waveform" translatesAutoresizingMaskIntoConstraints="NO" id="DRP-Pz-h3e">
+                                <rect key="frame" x="93" y="368" width="227" height="118"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F7E-Ej-szF">
+                                <rect key="frame" x="121" y="421" width="77" height="19"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0:07" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oK4-Pl-t9G" customClass="SCLabel">
+                                <rect key="frame" x="128" y="420" width="32" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5:54" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve1-ed-Euq" customClass="SCLabel">
+                                <rect key="frame" x="167" y="420" width="31" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.69803921568627447" green="0.69803921568627447" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Time Indicator Stroke" translatesAutoresizingMaskIntoConstraints="NO" id="vCV-mC-nMW">
+                                <rect key="frame" x="160" y="424" width="1" height="13"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxS-av-vYy" userLabel="Play">
+                                <rect key="frame" x="108" y="229" width="106" height="100"/>
+                                <state key="normal" image="player_play_button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="player_play_button_pressed"/>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOO-dG-vWf" userLabel="Prev">
+                                <rect key="frame" x="0.0" y="247" width="68" height="64"/>
+                                <state key="normal" image="player_prev_button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="player_prev_button_pressed"/>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulF-se-Tu1" userLabel="Next">
+                                <rect key="frame" x="252" y="247" width="68" height="64"/>
+                                <state key="normal" image="player_next_button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="player_next_button_pressed"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYw-Af-q02" customClass="SCPlayerEngagementButton">
+                                <rect key="frame" x="252" y="519" width="51" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Hide" backgroundImage="player_button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="player_button_pressed"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYO-uO-FGF" userLabel="Button - Hide (Stroke)" customClass="SCPlayerEngagementButton">
+                                <rect key="frame" x="252" y="519" width="51" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Hide" backgroundImage="player_paused_button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="player_paused_button_pressed"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGD-w1-m5U" customClass="SCPlayerEngagementButton">
+                                <rect key="frame" x="17" y="519" width="77" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="contentEdgeInsets" minX="-3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="9" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="1,234" image="Like" backgroundImage="player_button_end_left">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Like" backgroundImage="player_button_end_left_pressed"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yo-pS-xlq" userLabel="Button - 1,234 (Stroke)" customClass="SCPlayerEngagementButton">
+                                <rect key="frame" x="17" y="519" width="77" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="contentEdgeInsets" minX="-3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="9" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="1,234" image="Like" backgroundImage="player_paused_button_end_left">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Like" backgroundImage="player_paused_button_end_left_pressed"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGa-U7-tqU" customClass="SCPlayerEngagementButton">
+                                <rect key="frame" x="93" y="519" width="60" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="More" backgroundImage="player_button_end_right">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="player_button_end_right_pressed"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SK9-tf-uYX" userLabel="Button - More (Stroke)" customClass="SCPlayerEngagementButton">
+                                <rect key="frame" x="93" y="519" width="60" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="More" backgroundImage="player_paused_button_end_right">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="player_paused_button_end_right_pressed"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Waveform Paused" translatesAutoresizingMaskIntoConstraints="NO" id="ekt-QX-Fl4">
+                                <rect key="frame" x="92" y="440" width="228" height="1"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="artwork" destination="QMZ-AK-eLh" id="sgB-4S-24A"/>
+                        <outlet property="blurredArtwork" destination="ydS-h8-6E8" id="2XI-G2-UQu"/>
+                        <outlet property="nextButton" destination="ulF-se-Tu1" id="xFl-UH-OEv"/>
+                        <outlet property="normalHide" destination="kYw-Af-q02" id="jmJ-42-JfR"/>
+                        <outlet property="normalLike" destination="dGD-w1-m5U" id="cwp-KY-4wn"/>
+                        <outlet property="normalMore" destination="NGa-U7-tqU" id="IPa-Z3-5I9"/>
+                        <outlet property="normalWave" destination="DRP-Pz-h3e" id="1FZ-Fh-joW"/>
+                        <outlet property="pausedHide" destination="LYO-uO-FGF" id="OeN-OF-fNB"/>
+                        <outlet property="pausedLike" destination="9yo-pS-xlq" id="qjk-rM-9w9"/>
+                        <outlet property="pausedMore" destination="SK9-tf-uYX" id="Eoo-Px-WEs"/>
+                        <outlet property="pausedWave" destination="ekt-QX-Fl4" id="KX5-Da-Wgz"/>
+                        <outlet property="playButton" destination="WxS-av-vYy" id="NLd-N0-qNO"/>
+                        <outlet property="prevButton" destination="oOO-dG-vWf" id="hrP-DL-fWr"/>
+                        <outlet property="timeIndicatorBar" destination="F7E-Ej-szF" id="VxZ-zf-8Bo"/>
+                        <outlet property="titleBlackbar" destination="jlD-IS-lSs" id="6PX-ZE-mL0"/>
+                        <outlet property="userBlackbar" destination="Wxh-wm-Qe2" id="mh3-3c-24f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="492" y="271"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Artwork" width="640" height="1136"/>
+        <image name="Blur" width="320" height="568"/>
+        <image name="Like" width="17" height="14"/>
+        <image name="Time Indicator Stroke" width="1" height="13"/>
+        <image name="Waveform" width="227" height="109"/>
+        <image name="Waveform Paused" width="228" height="1"/>
+        <image name="player_button" width="51" height="32"/>
+        <image name="player_button_end_left" width="77" height="32"/>
+        <image name="player_button_end_left_pressed" width="77" height="32"/>
+        <image name="player_button_end_right" width="60" height="32"/>
+        <image name="player_button_end_right_pressed" width="60" height="32"/>
+        <image name="player_button_pressed" width="51" height="32"/>
+        <image name="player_next_button" width="28" height="19"/>
+        <image name="player_next_button_pressed" width="28" height="19"/>
+        <image name="player_paused_button" width="51" height="32"/>
+        <image name="player_paused_button_end_left" width="77" height="32"/>
+        <image name="player_paused_button_end_left_pressed" width="77" height="32"/>
+        <image name="player_paused_button_end_right" width="60" height="32"/>
+        <image name="player_paused_button_end_right_pressed" width="60" height="32"/>
+        <image name="player_paused_button_pressed" width="51" height="32"/>
+        <image name="player_play_button" width="82" height="82"/>
+        <image name="player_play_button_pressed" width="82" height="82"/>
+        <image name="player_prev_button" width="28" height="19"/>
+        <image name="player_prev_button_pressed" width="28" height="19"/>
+    </resources>
+</document>
