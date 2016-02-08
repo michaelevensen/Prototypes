@@ -11,11 +11,8 @@
 
 @interface SCWelcomeSearchViewController : SCWelcomeAnimationViewController
 
-// Page Index
-@property NSUInteger pageIndex;
-
 // Original Position
-@property CGPoint originalPosition;
+//@property CGPoint originalPosition;
 
 // Page Content
 @property (strong, nonatomic) IBOutlet UIView *pageContent;

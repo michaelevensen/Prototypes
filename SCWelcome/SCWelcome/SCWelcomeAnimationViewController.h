@@ -11,7 +11,7 @@
 @interface SCWelcomeAnimationViewController : UIViewController
 
 // Interface
-- (void)resetContent:(UIView *)content with:(CGPoint)originalPoint;
+- (void)resetContent:(UIView *)content;
 - (void)panView:(UIView *)view toValue:(CGFloat)value andDuration:(CGFloat)duration withSpring:(CGFloat)spring delay:(CGFloat)delay;
 - (void)scaleView:(UIView *)view toValue:(CGFloat)value andDuration:(CGFloat)duration withSpring:(CGFloat)spring delay:(CGFloat)delay;
 - (void)addMaskTo:(UIView *)frame;

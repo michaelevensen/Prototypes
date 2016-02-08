@@ -10,11 +10,8 @@
 
 @interface SCWelcomeDiscoverViewController : SCWelcomeAnimationViewController
 
-// Page Index
-@property NSUInteger pageIndex;
-
 // Original Position
-@property CGPoint originalPosition;
+//@property CGPoint originalPosition;
 
 // Feed
 @property (strong, nonatomic) IBOutlet UIView *pageFrame;

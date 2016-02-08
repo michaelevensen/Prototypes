@@ -23,20 +23,10 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
-
 #pragma mark - Reset
 
-- (void)resetContent:(UIView *)content with:(CGPoint)originalPoint
-{
+- (void)resetContent:(UIView *)content
+{   
     // Set State for Animation
     self.isAnimationActive = NO;
     
@@ -44,7 +34,7 @@
     [self.view.layer removeAllAnimations];
     
     // Reset Page Content Pan
-    content.center = originalPoint;
+    content.frame = CGRectOffset(content.frame, 0, 0);
 }
 
 #pragma mark - Pan Animation
@@ -64,7 +54,11 @@
                             options:UIViewAnimationOptionCurveEaseOut
                          animations:^{
                              
-                             view.center = CGPointMake(view.center.x, value);
+                             view.frame = CGRectOffset(view.frame, 0, value);
+                             
+                             NSLog(@"%f", value);
+                        
+                            
                          }
                          completion:nil];
 
@@ -78,7 +72,10 @@
                             options:UIViewAnimationOptionCurveEaseOut
                          animations:^{
                              
-                             view.center = CGPointMake(view.center.x, value);
+                             view.frame = CGRectOffset(view.frame, 0, value);
+                             
+                             NSLog(@"%f", value);
+                             
                          }
                          completion:nil];
     }
@@ -115,8 +112,6 @@
     
     // Set Mask Size
     mask.frame = CGRectMake(0, 0, image.size.width, image.size.height);
-    
-    NSLog(@"%f", mask.frame.size.height);
     
     // Add Mask
     frame.layer.mask = mask;

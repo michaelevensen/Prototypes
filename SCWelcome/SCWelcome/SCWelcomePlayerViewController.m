@@ -28,7 +28,7 @@
     [super viewDidLoad];
     
     // Store Original Position
-    [self setOriginalPosition:self.pageContent.center];
+//    [self setOriginalPosition:self.pageContent.center];
     
     // Store Original Label Pos
     self.activeLikeLabelPos = self.activeLikeLabel.center;
@@ -113,7 +113,7 @@
 - (void)viewDidDisappear:(BOOL)animated
 {
     // Reset
-    [self resetContent:self.pageContent with:self.originalPosition];
+    [self resetContent:self.pageContent];
 
     // Cancel Panning performSelector
     [NSObject cancelPreviousPerformRequestsWithTarget:self];
@@ -171,16 +171,5 @@
                      }
                      completion:nil];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

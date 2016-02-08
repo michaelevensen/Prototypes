@@ -28,7 +28,7 @@
     [super viewDidLoad];
     
     // Store Original Position
-    [self setOriginalPosition:self.pageContent.center];
+//    [self setOriginalPosition:self.pageContent.center];
     
     if(!self.circleView) {
         
@@ -51,14 +51,14 @@
         [self scaleView:self.circleView toValue:1.0 andDuration:0.4 withSpring:0.70 delay:0.3];
         
         // Animate Page Content
-        [self panView:self.pageContent toValue:180.0 andDuration:15.0 withSpring:0.0 delay:0.0];
+        [self panView:self.pageContent toValue:-260.0 andDuration:15.0 withSpring:0.0 delay:0.0];
     }
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
     // Reset
-    [self resetContent:self.pageContent with:self.originalPosition];
+    [self resetContent:self.pageContent];
     
     // Reset Highlight Circle
     self.circleView = [self resetTransform:self.circleView];
@@ -68,16 +68,5 @@
 {
     [super didReceiveMemoryWarning];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

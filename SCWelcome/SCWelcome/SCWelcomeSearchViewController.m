@@ -32,7 +32,7 @@
     self.followButtons = [[NSMutableArray alloc] init];
     
     // Store Original Position
-    [self setOriginalPosition:self.pageContent.center];
+//    [self setOriginalPosition:self.pageContent.center];
     
     if(!self.circleView) {
         
@@ -88,7 +88,7 @@
 - (void)viewDidDisappear:(BOOL)animated
 {
     // Reset
-    [self resetContent:self.pageContent with:self.originalPosition];
+    [self resetContent:self.pageContent];
     
     // Cancel Active following performSelector
     [NSObject cancelPreviousPerformRequestsWithTarget:self];
@@ -99,22 +99,5 @@
     // Reset Highlight Circle
     self.circleView = [self resetTransform:self.circleView];
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
