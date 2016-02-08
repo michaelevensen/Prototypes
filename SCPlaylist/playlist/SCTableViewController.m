@@ -38,7 +38,6 @@
     UITableView *tablev = [self tableView];
     tablev.contentInset = UIEdgeInsetsMake(0.0, 0.0, 50.0, 0.0);
     
-    
     // header size
     self.headerSize = 62;
     
@@ -46,8 +45,6 @@
     CGRect footerFrame = self.footer.frame;
     footerFrame.origin.y = 516;
     self.footer.frame = footerFrame;
-    
-
     
      // track images 120x120
     self.trackImages = [[NSMutableArray alloc] init];
@@ -103,12 +100,6 @@
     [self.blurredImageView addSubview:imageView];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     // header and offset
@@ -157,19 +148,9 @@
             // Header
             headerFrame.origin.y = (offset-self.header.frame.size.height+self.headerSize);
             self.header.frame = headerFrame;
-            
-            // on engagements
-//            if(offset<(self.frameHeight-self.headerSize+self.social.frame.size.height) )
-//            {
-//                NSLog(@"on engagement bar");
-//            }
-//            
-            // Social
-//            socialFrame.origin.y = offset+self.headerSize;
-//            self.social.frame = socialFrame;
         }
-        else if(offset<(self.frameHeight-self.headerSize) && headerFrame.origin.y>0)
-        {
+        
+        else if(offset<(self.frameHeight-self.headerSize) && headerFrame.origin.y>0) {
             // reset frame to 0 on fast scrolls
             headerFrame.origin.y = 0;
             self.header.frame = headerFrame;
@@ -216,48 +197,6 @@
         
     }
 }
-
-//-(void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
-//    
-//    CGFloat bottom_max = 140.0f;
-//    CGFloat velocity_min = 0.20f;
-//    
-//    if(targetContentOffset->y>bottom_max && velocity.y<=velocity_min) {
-//        NSLog(@"max");
-//        scrollView.decelerationRate = UIScrollViewDecelerationRateFast;
-//    }
-//    else {
-//        NSLog(@"normal");
-//       scrollView.decelerationRate = UIScrollViewDecelerationRateNormal;
-//    }
-//    
-//    
-//    NSLog(@"%f", velocity.y);
-//    
-//    if(targetContentOffset->y<self.frameHeight/2) {
-//        targetContentOffset->y = 0;
-//    
-//    } else if(targetContentOffset->y<self.frameHeight) {
-//        
-//        targetContentOffset->y = self.frameHeight-self.headerSize;
-//    }
-//}
-
-//-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-//    
-//    
-//    // lock to top and bottom
-//    if(scrollView.contentOffset.y<self.frameHeight/2) {
-//        
-//        [self.tableView scrollRectToVisible: CGRectMake(0, 0, 1, 1) animated:YES];
-//        
-//    } else {
-//        
-//        CGFloat topHalf = (scrollView.contentOffset.y-self.header.frame.size.height+self.headerSize);
-////        [self.tableView setContentOffset:<#(CGPoint)#> animated:<#(BOOL)#>];
-//        [self.tableView scrollRectToVisible: CGRectMake(0,scrollView.contentOffset.y+100, 1, 1) animated:YES];
-//    }
-//}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
