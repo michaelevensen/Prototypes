@@ -24,8 +24,8 @@ CGFloat infoTransitionValue;
      */
     self.coverHeight = self.cover.frame.size.height;
     
-    // for info animation
-    infoTransitionValue = 45.0;
+    // for info animation movement
+    infoTransitionValue = 20.0;
     
     /*
      * Create and Add Blur Artwork
@@ -38,37 +38,27 @@ CGFloat infoTransitionValue;
     self.coverBlur.alpha = 0;
     
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
     CGFloat offset = scrollView.contentOffset.y;
     
-    // Fade in Blurred artwork based on offset
+    // Fade Out Blurred artwork based on offset
     CGFloat offsetDestination = ( self.cover.frame.size.height / 2 ); // end destination for offset
-    CGFloat blurFadeValue = MAX(0, MIN(1, ( offset / offsetDestination ) ) ); // for values from 0 to 1
-    
-//    if(self.coverInfo.alpha<!1) {
-        self.coverBlur.alpha = blurFadeValue;
-//    }
-    
     CGFloat infoBlur = MIN(1, MAX(0, ( (offsetDestination - offset) / offsetDestination) ) ); // for values from 1 to 0
     
-    if(self.coverInfo.alpha>0) {
-//              self.coverInfo.center = CGPointMake(self.coverInfo.center.x, self.coverInfo.center.y+infoTransitionValue);
-    
-        // set cover alpha
-        self.coverInfo.alpha = infoBlur;
-
+    // fade info if visible
+    if(scrollView.contentOffset.y>self.cover.frame.size.height) {
+        
+        if(self.coverInfo.alpha>0) {
+            self.coverInfo.alpha = infoBlur;
+            self.coverBlur.alpha = infoBlur;
+            
+            // reset y position view
+            self.coverInfo.center = CGPointMake(self.coverInfo.center.x, self.coverInfo.center.y+infoTransitionValue);
+        }
     }
-    
     
     if(offset<0) {
     
@@ -82,6 +72,16 @@ CGFloat infoTransitionValue;
     }
 }
 
+- (IBAction)close:(id)sender {
+    
+    [UIView animateWithDuration:0.35 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        self.coverBlur.alpha = 0;
+        self.coverInfo.alpha = 0;
+        
+        self.coverInfo.center = CGPointMake(self.coverInfo.center.x, self.coverInfo.center.y+infoTransitionValue);
+        
+    } completion:nil];
+}
 
 - (IBAction)more:(id)sender {
     
@@ -89,16 +89,9 @@ CGFloat infoTransitionValue;
         self.coverBlur.alpha = 1;
         self.coverInfo.alpha = 1;
         
+        // moving animation for info view
         self.coverInfo.center = CGPointMake(self.coverInfo.center.x, self.coverInfo.center.y-infoTransitionValue);
 
     } completion:nil];
-    
-    
-//    [UIView animateWithDuration:0.2 animations:^{
-//        self.coverBlur.alpha = 1;
-//        self.coverInfo.alpha = 1;
-//        self.coverInfo.center = CGPointMake(self.coverInfo.center.x, self.coverInfo.center.y-30.0);
-//        
-//    }];
 }
 @end
