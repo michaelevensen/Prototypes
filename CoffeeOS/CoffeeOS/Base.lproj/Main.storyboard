@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeeOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cups ☕" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOM-5s-n05">
+                                <rect key="frame" x="267" y="103" width="66.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;cupsOfCoffeeValue&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRH-W9-gRO">
+                                <rect key="frame" x="114" y="132" width="371" height="45"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="37"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jex-1g-6b1">
+                                <rect key="frame" x="253" y="196" width="94" height="29"/>
+                                <connections>
+                                    <action selector="changeCupsValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="633-Zw-mqr"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BL0-Dk-Y4s">
+                                <rect key="frame" x="274" y="297" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkS-Ev-ZY3">
+                                <rect key="frame" x="228" y="490" width="144" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Start Brewing"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;equalsValue&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoG-Fo-6ae">
+                                <rect key="frame" x="209" y="323" width="182" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BL0-Dk-Y4s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="84o-Cb-lsa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zkS-Ev-ZY3" secondAttribute="bottom" constant="69" id="Cx1-T3-Vvz"/>
+                            <constraint firstItem="UoG-Fo-6ae" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FcK-Sm-mZ8"/>
+                            <constraint firstItem="yOM-5s-n05" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="MIy-iu-Oz2"/>
+                            <constraint firstItem="NRH-W9-gRO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NLv-6l-vFB"/>
+                            <constraint firstItem="BL0-Dk-Y4s" firstAttribute="top" secondItem="Jex-1g-6b1" secondAttribute="bottom" constant="72" id="Uet-2M-kxK"/>
+                            <constraint firstItem="Jex-1g-6b1" firstAttribute="top" secondItem="NRH-W9-gRO" secondAttribute="bottom" constant="19" id="caC-0L-fcF"/>
+                            <constraint firstItem="BL0-Dk-Y4s" firstAttribute="centerX" secondItem="UoG-Fo-6ae" secondAttribute="centerX" id="mlP-Kq-NIB"/>
+                            <constraint firstItem="Jex-1g-6b1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mu0-cp-niZ"/>
+                            <constraint firstItem="NRH-W9-gRO" firstAttribute="top" secondItem="yOM-5s-n05" secondAttribute="bottom" constant="8" id="tMS-dP-u8N"/>
+                            <constraint firstItem="zkS-Ev-ZY3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tS5-2T-yUm"/>
+                            <constraint firstItem="UoG-Fo-6ae" firstAttribute="top" secondItem="Jex-1g-6b1" secondAttribute="bottom" constant="98" id="yPX-Hk-wZt"/>
+                            <constraint firstItem="yOM-5s-n05" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z6u-Q7-pyd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cupsOfCoffeeValue" destination="NRH-W9-gRO" id="qxL-20-HSn"/>
+                        <outlet property="equalsValue" destination="UoG-Fo-6ae" id="TcQ-c7-9D1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="387"/>
+        </scene>
+    </scenes>
+</document>
